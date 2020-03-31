@@ -6,6 +6,8 @@ public class Planet : MonoBehaviour
 {
     [Range(16, 256)]
     public int resolution = 10;
+    [Range(0, 1)]
+    public float inflation = 1;
     public bool autoUpdate = true;
 
     public ShapeSettings shapeSettings;
@@ -46,7 +48,7 @@ public class Planet : MonoBehaviour
                 meshFilters[i].sharedMesh = new Mesh();
             }
 
-            terrainFaces[i] = new TerrainFace(shapeGenerator, meshFilters[i].sharedMesh, resolution, directions[i]);
+            terrainFaces[i] = new TerrainFace(shapeGenerator, meshFilters[i].sharedMesh, resolution, inflation, directions[i]);
         }
     }
 
