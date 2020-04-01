@@ -13,3 +13,24 @@ MonoBehaviour:
   m_Name: Shape
   m_EditorClassIdentifier: 
   planetRaduis: 2
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      strength: 0.15
+      numLayers: 4
+      baseRoughness: 0.61
+      roughness: 1.99
+      persistence: 0.41
+      center: {x: 0, y: 0, z: 0}
+      minValue: 0.82
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      strength: 5.37
+      numLayers: 5
+      baseRoughness: 0.71
+      roughness: 2.48
+      persistence: 0.29
+      center: {x: 0, y: 0, z: 0}
+      minValue: 0.89
